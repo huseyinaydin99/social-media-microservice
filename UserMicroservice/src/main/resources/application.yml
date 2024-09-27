@@ -1,11 +1,8 @@
-server:
-  port: 8181
-
 spring:
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      username: root
-      password: toor
-      database: UserProfileDB
+  cloud:
+    config:
+      uri: http://localhost:8888
+  config:
+    import: "configserver:"
+  application:
+    name: user-application
