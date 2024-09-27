@@ -19,11 +19,11 @@ MongoDB üzerinde kullanıcı adı root şifresi toor olan okuma, yazma ve dbAdm
 ## Docker Redis Single Node
 
 ```bash
-    docker run --name microservice-redis -p 6379:6379 -d redis
+docker run --name microservice-redis -p 6379:6379 -d redis
 ```
 
 ```bash
-    docker run --name redis-gui -d -p 8001:8001 redislabs/redisinsight:1.14.0
+docker run --name redis-gui -d -p 8001:8001 redislabs/redisinsight:1.14.0
 ```
 
 ## Redis Spring Boot Configuration
