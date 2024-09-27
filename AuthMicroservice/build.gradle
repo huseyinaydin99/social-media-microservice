@@ -3,4 +3,5 @@ dependencies {
     implementation libs.postgreSQL
     implementation libs.lombok
     annotationProcessor libs.lombok
+    implementation libs.springCloudStarterOpenFeign
 }
