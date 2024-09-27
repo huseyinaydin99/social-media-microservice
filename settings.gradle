@@ -1,3 +1,5 @@
 rootProject.name = 'SosyalMedya'
 include 'AuthMicroservice'
 include 'UserMicroservice'
+include 'ConfigServer'
+

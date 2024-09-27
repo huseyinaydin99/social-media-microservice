@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server-github
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/huseyinaydin99/microservice-egitim-config-server.git"
+          default-label: "main"
+          skip-ssl-validation: true
+          username: "huseyinaydin99"
+          password: ${GITHUB_KEY}
