@@ -1,0 +1,23 @@
+ext{
+    versions = [
+            springBoot          : '3.3.1',
+            springCloud         : '4.1.3',
+            postgreSQL          : '42.7.3',
+            lombok              : '1.18.34',
+            swagger             : '2.6.0'
+    ]
+
+    libs = [
+            springBootStarterWeb            : "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}",
+            springBootDataJpa               : "org.springframework.boot:spring-boot-starter-data-jpa:${versions.springBoot}",
+            springBootDataRedis             : "org.springframework.boot:spring-boot-starter-data-redis:${versions.springBoot}",
+            springCloudStarterOpenFeign     : "org.springframework.cloud:spring-cloud-starter-openfeign:${versions.springCloud}",
+            springCloudConfig               : "org.springframework.cloud:spring-cloud-starter-config:${versions.springCloud}",
+            springCloudConfigServer         : "org.springframework.cloud:spring-cloud-config-server:${versions.springCloud}",
+            springCloudConfigClient         : "org.springframework.cloud:spring-cloud-config-client:${versions.springCloud}",
+            springBootDataMongo             : "org.springframework.boot:spring-boot-starter-data-mongodb:${versions.springBoot}",
+            postgreSQL                      : "org.postgresql:postgresql:${versions.postgreSQL}",
+            lombok                          : "org.projectlombok:lombok:${versions.lombok}",
+            swaggerui                       : "org.springdoc:springdoc-openapi-starter-webmvc-ui:${versions.swagger}"
+    ]
+}
