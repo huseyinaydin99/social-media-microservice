@@ -88,3 +88,7 @@ kubectl delete services [servis ismi]
 kubectl describe services [servis ismi]
 kubectl get pods -o wide --podlar hakkında geniş bilgi verir.
 `````
+![mongo](https://github.com/user-attachments/assets/160fc873-bcdb-4eb4-af51-3e4365daa7be)
+![gradle](https://github.com/user-attachments/assets/0607b498-4a27-480e-8408-1e171b0bfd56)
+![docker](https://github.com/user-attachments/assets/ce011eb4-4cfb-405d-9a11-448eadc9f5d9)
+
