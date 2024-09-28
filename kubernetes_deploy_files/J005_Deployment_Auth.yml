@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth
+  template:
+    metadata:
+      labels:
+        app: auth
+    spec: 
+      containers:
+        - name: pod-auth
+          image: huseyin11/auth:v03
+          resources:
+            limits:
+              memory: "2048Mi"
+              cpu: "200m"
+          ports:
+          - containerPort: 9090

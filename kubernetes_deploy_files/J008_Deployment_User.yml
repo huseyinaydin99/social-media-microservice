@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-user
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user
+  template:
+    metadata:
+      labels:
+        app: user
+    spec: 
+      containers:
+        - name: pod-user
+          image: huseyin11/user:v02
+          resources:
+            limits:
+              memory: "2048Mi"
+              cpu: "300m"
+          ports:
+          - containerPort: 9091
+
+

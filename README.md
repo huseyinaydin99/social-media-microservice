@@ -72,4 +72,19 @@ docker build --platform linux/amd64 -t huseyin11/user:v02 .
 kubectl get pods --kiraladığımız makinedeki podları listeler.
 kubectl get nodes --kiraladığımız makineleri listeler. üzerinde çalıştığımız makineyi listeler.
 kubectl top nodes --kiraladığımız makinelerin özelliklerini listeler.
+kubectl apply -f J001_Deployment_PostgreSQL.yml --PostgreSQL için hazırlanan ayarları uygular ve PostgreSQLi pod olarak deploy eder.
+kubectl apply -f J002_Service_LoadBalancer_PostgreSQL.yml --PostgreSQL podunu dış dünyaya açar.
+kubectl get services --dış dünyaya port açmış podları listeler.
+kubectl apply -f J003_Deployment_CofigServer.yml
+kubectl apply -f J004_Service_LoadBalancer_Config.yml
+kubectl apply -f J005_Deployment_Auth.yml
+kubectl apply -f J006_Service_LoadBalancer_Auth.yml
+kubectl apply -f J008_Deployment_User.yml
+kubectl apply -f J009_Service_LoadBalancer_User.yml
+kubectl apply -f J010_Deployment_Mongo.yml
+kubectl apply -f J011_Service_LoadBalancer_Mongo.yml
+kubectl logs [pod ismi] --ilgili podun console loglarını verir.
+kubectl delete services [servis ismi]
+kubectl describe services [servis ismi]
+kubectl get pods -o wide --podlar hakkında geniş bilgi verir.
 `````

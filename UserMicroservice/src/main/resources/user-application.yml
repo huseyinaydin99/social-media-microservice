@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      host: localhost
+      host: mongodb://root:toor@mongodb-service:27017/admin
       port: 27017
       username: root
       password: toor

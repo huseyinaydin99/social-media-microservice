@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: configserver-service
+spec:
+  selector:
+    app: configserver
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 8888    # Dışarıdan erişim için kullanılacak port
+      targetPort: 8888  # Pod içindeki port
