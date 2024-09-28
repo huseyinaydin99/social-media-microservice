@@ -45,3 +45,22 @@ public class RedisConfig {
 
 }
 ```
+
+
+## Dockerfile Image Oluşturma
+##### Local'de çalıştırılacak imajlar için kullanım:
+````bash
+docker build -t configserver:v01 .
+````
+##### Docker hub üzerinde yayınlamak için kullanım:
+````bash
+docker build -t huseyin11/configserver:v01 .
+````
+##### M Chipli macOS için kullanım:
+````bash
+docker build --platform linux/amd64 -t huseyin11/configserver:v01 .
+-
+docker build --platform linux/amd64 -t huseyin11/auth:v02 .
+-
+docker build --platform linux/amd64 -t huseyin11/user:v02 .
+````
