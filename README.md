@@ -66,3 +66,10 @@ docker build --platform linux/amd64 -t huseyin11/auth:v02 .
 -
 docker build --platform linux/amd64 -t huseyin11/user:v02 .
 ````
+
+## Google Cloud Kubernetes Cluster Canlıya Taşıma
+`````bash
+kubectl get pods --kiraladığımız makinedeki podları listeler.
+kubectl get nodes --kiraladığımız makineleri listeler. üzerinde çalıştığımız makineyi listeler.
+kubectl top nodes --kiraladığımız makinelerin özelliklerini listeler.
+`````
