@@ -8,5 +8,5 @@ spec:
   type: LoadBalancer
   ports:
   - name: usertcp
-    port: 9091
-    targetPort: 9091
+    port: 8181
+    targetPort: 8181

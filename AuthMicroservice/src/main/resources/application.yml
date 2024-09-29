@@ -1,7 +1,21 @@
+server:
+  port: 9191
+
 spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://postgresql-service:5432/AuthDB
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
   cloud:
     config:
-      uri: http://service-config:8888
+      uri: http://configserver-service:8888
   config:
     import: "configserver:"
   application:

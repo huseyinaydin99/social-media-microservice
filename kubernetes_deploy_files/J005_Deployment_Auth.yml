@@ -14,10 +14,10 @@ spec:
     spec: 
       containers:
         - name: pod-auth
-          image: huseyin11/auth:v03
+          image: huseyin11/auth:v11
           resources:
             limits:
               memory: "2048Mi"
               cpu: "200m"
           ports:
-          - containerPort: 9090
+          - containerPort: 9191

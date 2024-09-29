@@ -14,12 +14,12 @@ spec:
     spec: 
       containers:
         - name: pod-user
-          image: huseyin11/user:v02
+          image: huseyin11/user:v21
           resources:
             limits:
               memory: "2048Mi"
               cpu: "300m"
           ports:
-          - containerPort: 9091
+          - containerPort: 8181
 
 

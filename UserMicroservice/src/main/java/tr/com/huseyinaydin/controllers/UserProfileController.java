@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping(USERPROFILE)
 public class UserProfileController {
-    private  final UserProfileService userProfileService;
+    private final UserProfileService userProfileService;
 
     @PostMapping(CREATE_USER)
     public ResponseEntity<Boolean> createUser(@RequestBody CreateUserRequestDTO dto){

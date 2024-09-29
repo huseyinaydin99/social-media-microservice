@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserProfileService {
     private final UserProfileRepository repository;
-    private final CacheManager cacheManager;
+    //private final CacheManager cacheManager;
 
     public void createUser(CreateUserRequestDTO dto) {
         repository.save(UserProfile.builder()
@@ -28,7 +28,7 @@ public class UserProfileService {
         return  repository.findAll();
     }
 
-    @Cacheable("upper-case")
+    //@Cacheable("upper-case")
     public String upperName(String name) {
         String result = name.toUpperCase();
         try{
@@ -37,7 +37,7 @@ public class UserProfileService {
         return result;
     }
 
-    public void clearCache(){
+    /*public void clearCache(){
         cacheManager.getCache("upper-case").clear();
-    }
+    }*/
 }

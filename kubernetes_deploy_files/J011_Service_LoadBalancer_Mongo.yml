@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-loadbalancer-mongo
+  name: mongodb-service
 spec:
   selector:
-    db: db-mongo
-  type: ClusterIP
+    app: mongodb
+  type: LoadBalancer
   ports:
-  - name: mongotcp
-    port: 27017
-    targetPort: 27017
+    - name: mongodb
+      port: 27017
+      targetPort: 27017

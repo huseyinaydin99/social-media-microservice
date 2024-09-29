@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: configserver
-          image: huseyin11/configserver
+          image: huseyin11/configserver:v01
           ports:
             - containerPort: 8888  # İmajın kullandığı port
           resources:
@@ -24,3 +24,6 @@ spec:
             requests:
               memory: "256Mi"
               cpu: "250m"
+          env:
+          - name: GITHUB_KEY
+            value: senin_github_classic_tokenin

@@ -6,7 +6,10 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: root
-    url: jdbc:postgresql://service-postgersql:5432/AuthDB
+    url: jdbc:postgresql://postgresql-service:5432/AuthDB
   jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import static tr.com.huseyinaydin.configs.RestApis.CREATE_USER;
 
-@FeignClient(url = "http://localhost:8181/dev/v1/user-profile", name = "userProfileManager")
+@FeignClient(url = "http://34.163.23.81:8181/dev/v1/user-profile", name = "userProfileManager")
 public interface UserProfileManager {
 
     @PostMapping(CREATE_USER)

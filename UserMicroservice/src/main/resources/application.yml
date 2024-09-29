@@ -1,7 +1,13 @@
+server:
+  port: 8181
+
 spring:
+  data:
+    mongodb:
+      uri: mongodb://root:toor@34.155.19.14:27017/UserProfileDB?authSource=admin
   cloud:
     config:
-      uri: http://service-config:8888
+      uri: http://configserver-service:8888
   config:
     import: "configserver:"
   application:

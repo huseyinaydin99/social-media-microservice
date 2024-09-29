@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: configserver
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - name: http
       port: 8888    # Dışarıdan erişim için kullanılacak port

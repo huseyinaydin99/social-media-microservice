@@ -1,29 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-mongo
+  name: mongodb-deployment
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      db: db-mongo
+      app: mongodb
   template:
     metadata:
       labels:
-        db: db-mongo
-    spec: 
+        app: mongodb
+    spec:
       containers:
-        - name: pod-mongo
-          image: mongo
-          resources:
-            limits:
-              memory: "2048Mi"
-              cpu: "300m"
+        - name: mongodb
+          image: mongo:4.4
           ports:
-          - containerPort: 27017
+            - containerPort: 27017
           env:
-          - name: MONGO_INITDB_ROOT_USERNAME
-            value: "root"
-          - name: MONGO_INITDB_ROOT_PASSWORD
-            value: "toor"
-
-
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: "root"
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: "toor"

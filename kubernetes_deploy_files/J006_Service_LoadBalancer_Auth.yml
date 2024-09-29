@@ -8,5 +8,5 @@ spec:
   type: LoadBalancer
   ports:
   - name: authtcp
-    port: 9099
-    targetPort: 9099
+    port: 9191
+    targetPort: 9191
