@@ -91,4 +91,9 @@ kubectl get pods -o wide --podlar hakkında geniş bilgi verir.
 ![mongo](https://github.com/user-attachments/assets/160fc873-bcdb-4eb4-af51-3e4365daa7be)
 ![gradle](https://github.com/user-attachments/assets/0607b498-4a27-480e-8408-1e171b0bfd56)
 ![docker](https://github.com/user-attachments/assets/ce011eb4-4cfb-405d-9a11-448eadc9f5d9)
+![postman](https://github.com/user-attachments/assets/73973e55-ae42-4361-99ed-7c16b0edfc80)
+![mongo_sh](https://github.com/user-attachments/assets/50d9d496-51ad-4d78-8043-3193b662ddb4)
+![gcp_user](https://github.com/user-attachments/assets/fea205c8-588e-42b8-8746-0d9051837945)
+![gcp_svc](https://github.com/user-attachments/assets/e609f9af-bc08-4713-bdb1-fe26f58e3682)
+![gcp](https://github.com/user-attachments/assets/6444598c-61c4-40ab-960f-125bc89ca3c4)
 
